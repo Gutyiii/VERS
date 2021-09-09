@@ -39,3 +39,8 @@ article {
 footer {
   grid-area: f;
 }
+
+.tartalom{
+  width: 80%;
+  margin: auto;
+}

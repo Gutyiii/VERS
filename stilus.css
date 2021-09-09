@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+  background: beige;
+}
+
+main {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  background:lightblue;
+  display: grid;
+  grid-template-areas:
+    "h h h h h h"
+    "n n n n n n"
+    "a a a a a a"
+    "f f f f f f";
+  grid-gap: 10px;
+}
+
+header {
+  grid-area: h;
+}
+nav {
+  background: lightcyan;
+  grid-area: n;
+}
+ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+li {
+  list-style-type: none;
+}
+article {
+  grid-area: a;
+}
+footer {
+  grid-area: f;
+}

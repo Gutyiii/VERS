@@ -8,13 +8,13 @@ var vers = [
 ];
 
 $(function(){
-    $("article").empty();
-    $("article").append("<div class='Lápi trotty'><h3>"+vers[0].cim+"</h3><br><br><p>"+vers[0].vers+"</p><br><br><p>"+vers[0].szerzo+"</p></div>")
+    $(".tartalom").empty();
+    $(".tartalom").append("<div class='Lápi trotty'><h3>"+vers[0].cim+"</h3><br><br><p>"+vers[0].vers+"</p><br><br><p>"+vers[0].szerzo+"</p></div>")
     $("div h3").on("click", kepMegjelenites);
 
   });
 
   function kepMegjelenites(){
-    $("article").append("<div class='lapkep'><img></div>");
-    $("article img").attr("src",vers[0].kep);
+    $(".tartalom").append("<div class='lapkep'><img></div>");
+    $(".tartalom img").attr("src",vers[0].kep);
   }
